@@ -1,10 +1,11 @@
 ---
 const post = await Astro.glob("../posts/loner-lower-still.md");
+import faye from '../images/faye.png'
 ---
 
 <div class="first">
   <img
-    src="./images/faye.png"
+    src={faye}
     alt=""
     style="
     position: relative;
