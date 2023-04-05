@@ -1,0 +1,69 @@
+---
+const posts = await Astro.glob("../posts/*.md");
+posts.sort((a, b) => {
+  return a.frontmatter.id > b.frontmatter.id ? -1 : 1;
+})
+posts.splice(0, 1)
+---
+
+<div class="post">
+  {
+    posts.length != 0
+      ? posts.map((post) => {
+          return (
+            <>
+              <div class="indiv" id={post.frontmatter.id}>
+                <h2>
+                  <a href={post.frontmatter.slug}>{post.frontmatter.title}</a>
+                </h2>
+                <p>{post.frontmatter.excerpt}</p>
+              </div>
+              <div class="border" />
+            </>
+          );
+        })
+      : null
+  }
+</div>
+
+<style>
+  .indiv {
+    background-color: white;
+    margin: 2rem 14rem;
+    border-radius: 8px;
+    /* border: 2px solid black; */
+    box-shadow: 0px 1px 2px 0.5px grey;
+  }
+
+  .border {
+    border-bottom: 2px solid lightblue;
+    margin: 2rem 18rem;
+    display: none;
+  }
+
+  a {
+    color: rgb(142, 45, 142);
+    text-decoration: none;
+  }
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    padding: 0.5rem 10rem;
+    padding-bottom: 2rem;
+    text-align: justify;
+  }
+</style>
+
+<script></script>

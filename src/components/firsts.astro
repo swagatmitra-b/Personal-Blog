@@ -1,0 +1,74 @@
+---
+const post = await Astro.glob("../posts/loner-lower-still.md");
+---
+
+<div class="first">
+  <img
+    src="../../images/faye.png"
+    alt=""
+    style="
+    position: relative;
+    margin-top: 30px;
+    margin-left: 80px;
+    z-index: -1;
+    height: 40rem;  
+    border-radius: 15rem;    
+    "
+  />
+  <div class="recent-post">
+    {
+      post.map((post) => {
+        return (
+          <>
+            <h1>
+              <a href={post.frontmatter.slug}>{post.frontmatter.title}</a>
+            </h1>
+            <p>{post.frontmatter.excerpt}</p>
+          </>
+        );
+      })
+    }
+  </div>
+</div>
+
+<style>
+  .first {
+    display: flex;
+  }
+
+  .recent-post {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0rem 2.5rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    box-shadow: 0px 1px 1px 1px grey;
+    height: 36rem;
+  }
+
+  h1 {
+    margin-top: 3rem;
+    font-size: 2.7rem;
+    font-family: "Poppins", sans-serif;
+  }
+
+  h3 {
+    font-family: "Mukta";
+    text-align: start;
+    display: none;
+  }
+
+  p {
+    padding-top: 0.7rem;
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    max-width: 600px;
+    text-align: left;
+  }
+
+  a {
+    color: rgb(142, 45, 142);
+    text-decoration: none;
+  }
+</style>

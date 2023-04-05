@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const posts = await Astro.glob("../posts/*.md");
+  return [
+    posts.map((post) => ({
+      params: {
+        slug: post.frontmatter.slug,
+      },
+      props: {
+        post,
+      },
+    })),
+  ];
+}
+
+const { Content, frontmatter } = Astro.props.post;
+---
+
+<Layout title={frontmatter.title}>
+  <div class="main">
+    <h1>{frontmatter.title}</h1>
+    <Content/>
+  </div>
+  <a href="/">Go Back</a>
+  <div class="empty"></div>
+</Layout>
+
+
+<style>
+  h1 {
+    text-align: center;
+  }
+  .main {
+    padding: 2.7rem 5.5rem;
+    background-color: white;
+    margin: 2rem 7rem;
+    border-radius: 8px;
+    box-shadow: 0px 1px 1px 1px grey;
+  }
+
+  a {
+    position: relative;
+    padding: 0.5rem 0.7rem;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid black;
+    margin: 10rem 7rem;
+  }
+
+  a:hover {
+    color: white;
+    background-color: black;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .empty {
+    height: 2.5rem;
+  }
+</style>
