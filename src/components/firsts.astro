@@ -4,7 +4,7 @@ const post = await Astro.glob("../posts/loner-lower-still.md");
 
 <div class="first">
   <img
-    src="./faye.png"
+    src="images/faye.png"
     alt=""
     style="
     position: relative;
@@ -15,6 +15,8 @@ const post = await Astro.glob("../posts/loner-lower-still.md");
     border-radius: 15rem;    
     "
   />
+
+  <img src="screen.png" alt="">
   <div class="recent-post">
     {
       post.map((post) => {
