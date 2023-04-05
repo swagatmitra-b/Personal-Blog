@@ -2,7 +2,7 @@
 title: Loner, lower still
 id: 1
 slug: loner-lower-still
-excerpt: Back and forth like a rally, I watched the two bounce opinions off each other and bicker about people I didn’t know. Judging from their expressions, they seemed to revel in such conversation. Arm in arm, eye to eye, we kept moving. Some arid afternoons certainly called for revitalizing friendships I wasn’t a part of. I was only a barren, unexciting third-wheeler they could hardly care to walk with for the sake of companionship. Companionship we so desperately sought. 
+excerpt: Back and forth like a rally, I watched two bounce opinions off each other and bicker about people I didn’t know. Judging from their expressions, they seemed to revel in such conversation. Arm in arm, eye to eye, we kept moving. Some arid afternoons certainly called for revitalizing friendships I wasn’t a part of. I was only a barren, unexciting third-wheeler they could hardly care to walk with for the sake of companionship. Companionship we so desperately sought. 
 date: April 5th, 2023
 author: Swagat
 ---
