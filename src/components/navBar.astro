@@ -3,9 +3,8 @@
         <div class="name"><a href="/">My Blog</a></div>
         <div class="links">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About Me</a></li>
-               
+                <li><a href="/" class="after1">Home</a></li>
+                <li><a href="/about" class="after2">About Me</a></li>  
             </ul>
         </div>
     </nav>
@@ -38,4 +37,34 @@
     color: black;
  }
 
+ a.after1::after {
+    content: '';
+    position: absolute;
+    top: 3rem;
+    border-radius: 4px;
+    right: 17.6rem;
+    width: 3.5rem;
+    height: 2px;
+    background: black;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+ }
+
+ a.after1:hover::after, a.after2:hover::after {
+    transform: scale(1);
+ }
+
+ a.after2::after {
+    content: '';
+    position: absolute;
+    top: 3rem;
+    right: 7.5rem;
+    width: 6rem;
+    height: 2px;
+    background-color: black;
+    border-radius: 4px;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+ }
+ 
 </style>
