@@ -1,6 +1,6 @@
 ---
 title: Literary, literally you
-id: 1
+id: 2
 slug: literary-literally-you
 excerpt: "How many special people change?" I asked, half-wishing it wasn't a valid question. After a brief moment of anticipation, you replied with an earnest look. "None." You were now swinging at a stronger pace. "Special people don't change. They never lose what makes them special to you. Their...je ne sais quoi. The ones who change were simply never special. They're masquerades." A deliberate silence helped soak in what you said. "But how can you tell between a masquerade and someone who's not?" I asked. You shrugged."You just........know."
 date: April 19th, 2023
@@ -12,7 +12,7 @@ The laces of your pink trainers swayed as you swung listlessly on the creaky old
 <p>
 "Renny." You hear me call out in a low voice. "My watch isn't water-resistant." You look down at a watch which seemed out of place in your dainty wrists. </p><p>
 "There's barely a droplet." You replied reassuringly.</p><p>
-"Well, what's the time?" </p><>
+"Well, what's the time?" </p><p>
 "A quarter to six." </p><p>
 "I should be leaving soon." I said, my voice brimming with lethargy. "I've got homework." </p><p>
 "You've always got homework." </p><p>
